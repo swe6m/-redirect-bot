@@ -1,4 +1,3 @@
-
 from flask import Flask, redirect, request
 import requests
 from datetime import datetime
@@ -35,6 +34,3 @@ def redirect_link(code):
 
     # إعادة توجيه إلى الرابط الأساسي
     return redirect(TARGET_URL)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
